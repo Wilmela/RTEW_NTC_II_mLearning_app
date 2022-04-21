@@ -134,6 +134,28 @@ const ELECT_DEVICES_CIR_DATA = [
       </BodyText>
     )
   ),
+
+  new Lesson(
+    "SUM-1",
+    "Summary",
+    (
+      <BodyText>
+        <HeadText>Summary</HeadText>
+        <ParagraphText>
+          1. Electronics is the branch of engineering which deals with current
+          conduction through a vacuum or gas or semiconductor. {"\n"}
+          2. Electronic devices are capable of performing the functions of
+          amplification, rectification, control, generation, conversion of light
+          into electricity and conversion of electricity into light. {"\n"}
+          3. The two most frequently used semiconductor materials are Germanium
+          and Silicon. {"\n"}
+          4. The two main types of rectification are Full wave and Half wave.
+          {"\n"}
+          5. Four diodes are employed in a full-wave bridge rectifier.
+        </ParagraphText>
+      </BodyText>
+    )
+  ),
 ];
 
 const RADIO_COMM_DATA = [
@@ -240,12 +262,32 @@ const RADIO_COMM_DATA = [
         </ParagraphText>
         <SubHeadText>Uses of the Radio Spectrum</SubHeadText>
         <ParagraphText>
-          Broadcast Service, Fixed Service, Mobile Service, Aeronautical Mobile
+          1.  Broadcast Service, Fixed Service, Mobile Service, Aeronautical Mobile
           Service, Land Mobile Service, Maritime Mobile Service, Cellular
           Telephone and Personal radio communications, Satellite Service,
           Standard Frequency and Time Signal Service, Radio Navigation Service,
           Radio Location Service, Radio Astronomy Service, Amateur Service and
           Industrial, Scientific, and Medical (ISM).
+        </ParagraphText>
+      </BodyText>
+    )
+  ),
+
+  new Lesson(
+    "SUM-2",
+    "Summary",
+    (
+      <BodyText>
+        <HeadText>Summary</HeadText>
+        <ParagraphText>
+          1.  Electromagnetic waves are radiated by Electric Charges.{'\n'}
+          2.  The mode of transmission of Analog signal include Amplitude modulation and{'\n'}
+          Frequency modulation.
+          3.  Transmitter is a necessary component parts of all
+          electronic devices that communicate by radio. {'\n'}
+          4.  The process of encoding information onto a radio wave by varying one of its basic
+          characteristics is called Modulation.{'\n'}
+          5.  The process of extracting radio signal is called Demodulation.
         </ParagraphText>
       </BodyText>
     )
@@ -344,6 +386,30 @@ const RADIO_AUDIO_FREQ_DATA = [
       </BodyText>
     )
   ),
+
+  new Lesson(
+    "SUM-3",
+    "Summary",
+    (
+      <BodyText>
+        <HeadText>Summary</HeadText>
+        <ParagraphText>
+          1.  The output final stage of a multi-stage amplifier is also called power
+          stage. {'\n'}
+          2.  The first few stages in this multistage amplifier have the
+          function of only Voltage amplification. {'\n'}
+          3.  The range of human hearing
+          extends from 20 Hz to 20 kHz.{'\n'} 
+          4.  The transistor parameters include current gain, input impedance and output impedance. {'\n'}
+          5.  Amplifiers are generally classified according to their mode of operation i.e. the
+          portion of the input cycle during which the collector current is
+          expected to flow. On this basis,they are classified as : (i) class A
+          power amplifier (ii) class B power amplifier (iii) class C power
+          amplifier. (iv) Class AB power amplifier
+        </ParagraphText>
+      </BodyText>
+    )
+  ),
 ];
 
 const SAT_TRANS_RECEPT_DATA = [
@@ -435,6 +501,28 @@ const SAT_TRANS_RECEPT_DATA = [
       </BodyText>
     )
   ),
+  new Lesson(
+    "SUM-4",
+    "Summary",
+    (
+      <BodyText>
+        <HeadText>Summary</HeadText>
+        <ParagraphText>
+          1.  There are basically three types of satellites according to the
+          function it performs. They include: Fixed Service Satellites, Consumer
+          Satellites and Medium Powered Satellite. {'\n'}
+          2.  Low Noise Block Converter (LNB) serves as signal Amplifier. {'\n'}
+          3.  The main components of a satellite
+          consist of the followings: the propulsion system, antennas and
+          transponders and power system. {'\n'}
+          4.  The capability of a satellite to act as a repeater for many different earth stations is called multiple
+          access. {'\n'}
+          5.  The satellite is usually placed in a geosynchronous orbit
+          about 22300 miles above the earth.
+        </ParagraphText>
+      </BodyText>
+    )
+  ),
 ];
 
 const TELEVISION_DATA = [
@@ -478,13 +566,33 @@ const TELEVISION_DATA = [
         <SubHeadText>
           Block Diagram of Television Transmitter and Receiver
         </SubHeadText>
-        <LessonImage imgUrl={images.TvAntenna}/>
-        <SubHeadText>
-          Block Diagram of Television Receiver
-        </SubHeadText>
-        <LessonImage imgUrl={images.TvReceiver}/>
-        <ParagraphText>
+        <LessonImage imgUrl={images.TvAntenna} />
+        <SubHeadText>Block Diagram of Television Receiver</SubHeadText>
+        <LessonImage imgUrl={images.TvReceiver} />
+        <ParagraphText></ParagraphText>
+      </BodyText>
+    )
+  ),
 
+  new Lesson(
+    "SUM-5",
+    "Summary",
+    (
+      <BodyText>
+        <HeadText>Summary</HeadText>
+        <ParagraphText>
+          1.  Television is used in the practical of transmitting scenes or
+          reception of video and audio UHF or VHF radio signals. {'\n'}
+          2.  Television display technologies have been evolving over the years from one
+          generation to another. Some of these display technologies include;
+          Disk, Cathode ray tube, Digital Light, Processing (DLP), Plasma
+          display, Liquid crystal display and Organic light-emitting diode
+          Television. {'\n'}
+          3.  Some of the parts of television include Tuner, Amplifier
+          and Detector. {'\n'}
+          4.  The television transmitter by means of a camera tube
+          converts light rays into electric electric signals. 
+          5.  C.R.T stands for Cathode Ray Tube.
         </ParagraphText>
       </BodyText>
     )

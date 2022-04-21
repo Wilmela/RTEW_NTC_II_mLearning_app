@@ -112,7 +112,7 @@ export const RCMQuiz = {
 export const RAFQuiz = {
   questions: [
     {
-      question: "The out final stage of a multistage amplifier is also called?",
+      question: "The output final stage of a multi-stage amplifier is also called?",
       answer1: "Mixer Stage",
       answer2: "Power Stage",
       answer3: "Detector Stage",
@@ -154,7 +154,7 @@ export const RAFQuiz = {
     },
 
     {
-      question: "Which of the following is not a class of  amplifier?",
+      question: "Which of the following is not a class of amplifier?",
       answer1: "Class A",
       answer2: "Class D",
       answer3: "Class C",
@@ -236,7 +236,7 @@ export const TVQuiz = {
     },
 
     {
-      question: "Which of this is not a television display technology ?",
+      question: "Which of these is not a television display technology ?",
       answer1: "Plasma display ",
       answer2: "Digital light processing ",
       answer3: "Light crystal display ",
@@ -246,7 +246,7 @@ export const TVQuiz = {
     },
 
     {
-      question: "Which of this does not concern television ?",
+      question: "Which of these does not concern television ?",
       answer1: "Tuner ",
       answer2: "Blue bed ",
       answer3: "Amplifier",
