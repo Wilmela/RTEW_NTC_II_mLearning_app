@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import { FONTS, images, SIZES } from "../../constants";
-import { Nav, BottomButton, TopicItem } from "../../components";
+import { Nav, BottomButton, TopicItem, TopicText } from "../../components";
 import {RADIO_AUDIO_FREQ_DATA as DATA } from "../../data/learningData";
 import { RAFQuiz } from "../../data/QuizQuestions";
 
@@ -20,9 +20,9 @@ const RadioAndAudFreq = () => {
 
         {DATA.map((item) => (
           <TopicItem key={item.id} onPress={() => navigation.navigate("Contents", { item })} >
-            <Text style={{ marginVertical: SIZES.base, fontFamily: FONTS.semiBold, fontSize: SIZES.font, }} >
+            <TopicText >
               {item.topic}
-            </Text>
+            </TopicText>
           </TopicItem>
         ))}
       </View>

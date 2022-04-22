@@ -1,5 +1,5 @@
-import { TouchableOpacity } from "react-native";
-import { SIZES } from "../constants";
+import { TouchableOpacity, Text } from "react-native";
+import { SIZES , FONTS} from "../constants";
 const TopicItem = ({ children, onPress }) => {
   return (
     <TouchableOpacity
@@ -8,8 +8,8 @@ const TopicItem = ({ children, onPress }) => {
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
-        marginVertical: SIZES.base,
-        paddingVertical: SIZES.base,
+        marginVertical: SIZES.base - 4,
+        paddingVertical: SIZES.base -2,
       }}
       onPress={onPress}
     >
@@ -18,4 +18,15 @@ const TopicItem = ({ children, onPress }) => {
   );
 };
 
-export default TopicItem;
+const TopicText = ({ fontSub, children }) => (
+  <Text
+    style={{
+      marginVertical: SIZES.base - 4,
+      fontFamily: FONTS.semiBold,
+      fontSize: !fontSub ? SIZES.medium : SIZES.medium - fontSub,
+    }}
+  >
+    {children}
+  </Text>
+);
+export  {TopicItem, TopicText};
