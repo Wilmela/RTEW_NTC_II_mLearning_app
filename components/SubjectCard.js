@@ -3,6 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import {MaterialIcons, FontAwesome5} from '@expo/vector-icons';
 import { COLORS, SIZES, FONTS, SHADOWS, images } from "../constants";
 import Circle from "./Circle";
+import audio from '../data/audioData';
 
 const SubjectCard = ({subject, onPress, imgUrl}) => {
 
@@ -26,14 +27,14 @@ const SubjectCard = ({subject, onPress, imgUrl}) => {
         <View>
           <Circle imgUrl={images.nyion}  width={80} imgSize={'100%'} onPress={showAlert}/>
            <Text style={{ fontFamily: FONTS.semiBold, fontSize: SIZES.large,paddingLeft:5}}> Inyion </Text>
-           <Text style={{ fontFamily: FONTS.regular, fontSize: SIZES.font-2,paddingLeft:6}}> Instructor </Text>
+           <Text style={{ fontFamily: FONTS.regular, fontSize: SIZES.font-2,paddingLeft:6,}}> Instructor </Text>
         </View>
         
         <View style={{ width: 220, height:150, justifyContent:'space-evenly', flexDirection:'row', position:'absolute', right: 0,bottom: -25}}>
-          <MaterialIcons  onPress={onPress} name='book' size={40} color={COLORS.primary}/>
-          <MaterialIcons onPress={()=>Linking.openURL('mailto: nyeneimeinyion222@gmail.com?subject=Hello%20sir ')}  name='email' size={40} color={COLORS.primary}/>
-          <FontAwesome5 onPress={()=>navigation.navigate('Youtube')}  name='youtube' size={40} color='red'/>
-          <MaterialIcons onPress={()=>Linking.openURL('tel: +2348064046774')} name='phone' size={40} color={COLORS.primary}/>
+          <MaterialIcons  onPress={onPress} name='book' size={35} color={COLORS.primary}/>
+          <MaterialIcons onPress={()=>Linking.openURL('mailto: nyeneimeinyion222@gmail.com?subject=Hello%20sir ')}  name='email' size={35} color={COLORS.primary}/>
+          <FontAwesome5 onPress={()=>navigation.navigate('Youtube')}  name='youtube' size={35} color='red'/>
+          <MaterialIcons onPress={()=>Linking.openURL('tel: +2348064046774')} name='phone' size={35} color={COLORS.primary}/>
         </View>
       </View>
       

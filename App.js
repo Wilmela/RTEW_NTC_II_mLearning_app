@@ -3,7 +3,7 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Home, Contents, Youtube, Quiz, QuizFinish, ElectDevAndCir,
-  RadioAndAudFreq, RadioCom, SatTransAndReception, Television, } from "./screens";
+  RadioAndAudFreq, RadioCom, SatTransAndReception, Television, AudioPlayer } from "./screens";
 
 export default function App() {
   const theme = {
@@ -42,6 +42,8 @@ export default function App() {
         <Screen name="RadioAndAudFreq" component={RadioAndAudFreq} />
         <Screen name="SatTransAndRecept" component={SatTransAndReception} />
         <Screen name="Television" component={Television} />
+
+        <Screen name="AudioPlayer" component={AudioPlayer} />
       </Navigator>
     </NavigationContainer>
   );

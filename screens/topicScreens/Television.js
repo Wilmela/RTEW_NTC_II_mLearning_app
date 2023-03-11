@@ -27,7 +27,7 @@ const Television = () => {
         ))}
       </View>
 
-      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: TVQuiz.questions }) } />
+      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: TVQuiz.questions }) } i={4} />
     </>
   );
 };

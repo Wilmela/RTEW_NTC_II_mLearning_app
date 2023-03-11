@@ -5,6 +5,7 @@ export{default as Youtube} from './Youtube';
 
 export{default as Quiz} from '../screens/Quiz';
 export{default as QuizFinish} from '../screens/QuizFinish';
+export{default as AudioPlayer} from '../screens/AudioPlayer';
 
 export{default as ElectDevAndCir} from '../screens/topicScreens/ElectDevAndCir';
 export{default as RadioAndAudFreq} from '../screens/topicScreens/RadioAndAudFreq';

@@ -27,7 +27,7 @@ const SatTransAndReception = () => {
         ))}
       </View>
 
-      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: STRQuiz.questions }) } />
+      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: STRQuiz.questions }) } i={3} />
     </>
   );
 };

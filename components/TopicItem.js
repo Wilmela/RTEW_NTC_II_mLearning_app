@@ -1,5 +1,5 @@
-import { TouchableOpacity, Text } from "react-native";
-import { SIZES , FONTS} from "../constants";
+import { TouchableOpacity, Text, ScrollView } from "react-native";
+import { SIZES , FONTS, screenSize} from "../constants";
 const TopicItem = ({ children, onPress }) => {
   return (
     <TouchableOpacity
@@ -10,6 +10,7 @@ const TopicItem = ({ children, onPress }) => {
         alignItems: "center",
         marginVertical: SIZES.base - 4,
         paddingVertical: SIZES.base -2,
+        paddingHorizontal:SIZES.font,
       }}
       onPress={onPress}
     >

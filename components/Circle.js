@@ -7,7 +7,7 @@ const Circle = ({ imgUrl, width, imgSize, position, top, left, bgColor, onPress,
       <TouchableOpacity
         style={{ width: width, height: width, borderRadius: 50,
           overflow: "hidden", marginBottom: SIZES.small, position: position,
-          top: top, left: left, backgroundColor: bgColor, justifyContent:'center', 
+          top: top, left: left, backgroundColor: bgColor, justifyContent:'center', zIndex:10,
           alignItems:'center' }}
           onPress={onPress}
       >

@@ -1,5 +1,11 @@
 import { images } from "../constants";
-import { HeadText, SubHeadText, ParagraphText, BodyText, LessonImage, } from "../components/Content";
+import {
+  HeadText,
+  SubHeadText,
+  ParagraphText,
+  BodyText,
+  LessonImage,
+} from "../components/Content";
 import Lesson from "../model/contentModule";
 
 const ELECT_DEVICES_CIR_DATA = [
@@ -17,6 +23,7 @@ const ELECT_DEVICES_CIR_DATA = [
           semiconductor. Such devices have valuable properties which enable them
           to function and behave as the friend of man today.
         </ParagraphText>
+        <LessonImage imgUrl={images.electronics} />
 
         <SubHeadText>Importance of Electronics</SubHeadText>
         <ParagraphText>
@@ -42,6 +49,7 @@ const ELECT_DEVICES_CIR_DATA = [
           and conduction band is almost empty. Further, the energy gap between
           valence and conduction bands is very small.
         </ParagraphText>
+        <LessonImage imgUrl={images.semicon1} />
 
         <SubHeadText>Properties of Semiconductors</SubHeadText>
         <ParagraphText>
@@ -53,6 +61,7 @@ const ELECT_DEVICES_CIR_DATA = [
           added to a semiconductor, its current conducting properties change
           appreciably.
         </ParagraphText>
+        <LessonImage imgUrl={images.semicon2} />
       </BodyText>
     )
   ),
@@ -179,6 +188,8 @@ const RADIO_COMM_DATA = [
           garage door openers, two-way radios in aircraft, ships, spacecraft,
           radar sets and navigational beacons.
         </ParagraphText>
+        <LessonImage imgUrl={images.radioTrans2} />
+        <LessonImage imgUrl={images.radioTrans} />
       </BodyText>
     )
   ),
@@ -195,11 +206,13 @@ const RADIO_COMM_DATA = [
         <ParagraphText>
           A measure of the value of a radio wave, measured in volts.
         </ParagraphText>
+        <LessonImage imgUrl={images.amplitude} />
         <SubHeadText>Analog:</SubHeadText>
         <ParagraphText>
           Mode of transmission of Analog signal include Amplitude modulation
           (AM) and Frequency modulation (FM)
         </ParagraphText>
+
         <SubHeadText>Carrier:</SubHeadText>
         <ParagraphText>
           Carrier: Carrier is a radio wave that is used to transmit information.
@@ -216,7 +229,7 @@ const RADIO_COMM_DATA = [
           binary digits, or bits, can then be sent as a series of “on’’ /’’off’
           pulses or can be modulated onto a carrier wave by varying the phase,
           frequency, or amplitude according to whether the signal is a”1” or a
-          “O.” Data is sent in a similar fashion although it does not have to be
+          “0.” Data is sent in a similar fashion although it does not have to be
           converted into digital form first.
         </ParagraphText>
         <SubHeadText>Frequency:</SubHeadText>
@@ -262,8 +275,8 @@ const RADIO_COMM_DATA = [
         </ParagraphText>
         <SubHeadText>Uses of the Radio Spectrum</SubHeadText>
         <ParagraphText>
-          1.  Broadcast Service, Fixed Service, Mobile Service, Aeronautical Mobile
-          Service, Land Mobile Service, Maritime Mobile Service, Cellular
+          1. Broadcast Service, Fixed Service, Mobile Service, Aeronautical
+          Mobile Service, Land Mobile Service, Maritime Mobile Service, Cellular
           Telephone and Personal radio communications, Satellite Service,
           Standard Frequency and Time Signal Service, Radio Navigation Service,
           Radio Location Service, Radio Astronomy Service, Amateur Service and
@@ -280,14 +293,14 @@ const RADIO_COMM_DATA = [
       <BodyText>
         <HeadText>Summary</HeadText>
         <ParagraphText>
-          1.  Electromagnetic waves are radiated by Electric Charges.{'\n'}
-          2.  The mode of transmission of Analog signal include Amplitude modulation and{'\n'}
-          Frequency modulation.
-          3.  Transmitter is a necessary component parts of all
-          electronic devices that communicate by radio. {'\n'}
-          4.  The process of encoding information onto a radio wave by varying one of its basic
-          characteristics is called Modulation.{'\n'}
-          5.  The process of extracting radio signal is called Demodulation.
+          1. Electromagnetic waves are radiated by Electric Charges.{"\n"}
+          2. The mode of transmission of Analog signal include Amplitude
+          modulation and{"\n"}
+          Frequency modulation. 3. Transmitter is a necessary component parts of
+          all electronic devices that communicate by radio. {"\n"}
+          4. The process of encoding information onto a radio wave by varying
+          one of its basic characteristics is called Modulation.{"\n"}
+          5. The process of extracting radio signal is called Demodulation.
         </ParagraphText>
       </BodyText>
     )
@@ -378,11 +391,19 @@ const RADIO_AUDIO_FREQ_DATA = [
           classified according to their mode of operation i.e. the portion of
           the input cycle during which the collector current is expected to
           flow. On this basis,they are classified as : {"\n"}
-          (i). class A power amplifier {"\n"}
-          (ii). class B power amplifier {"\n"}
-          (iii). class C power amplifier {"\n"}
-          (iv). class AB power amplifier
         </ParagraphText>
+        <LessonImage imgUrl={images.a} />
+        <ParagraphText> (i). class A power amplifier</ParagraphText>
+        <LessonImage imgUrl={images.b} />
+        <ParagraphText>(ii). class B power amplifier</ParagraphText>
+
+        <LessonImage imgUrl={images.c} />
+        <ParagraphText>(iii). class C power amplifier</ParagraphText>
+
+        <LessonImage imgUrl={images.ab} />
+        <ParagraphText>(iv). class AB power amplifier</ParagraphText>
+        <SubHeadText>Graphical illustration</SubHeadText>
+        <LessonImage imgUrl={images.abcAmplifier} />
       </BodyText>
     )
   ),
@@ -394,18 +415,18 @@ const RADIO_AUDIO_FREQ_DATA = [
       <BodyText>
         <HeadText>Summary</HeadText>
         <ParagraphText>
-          1.  The output final stage of a multi-stage amplifier is also called power
-          stage. {'\n'}
-          2.  The first few stages in this multistage amplifier have the
-          function of only Voltage amplification. {'\n'}
-          3.  The range of human hearing
-          extends from 20 Hz to 20 kHz.{'\n'} 
-          4.  The transistor parameters include current gain, input impedance and output impedance. {'\n'}
-          5.  Amplifiers are generally classified according to their mode of operation i.e. the
-          portion of the input cycle during which the collector current is
-          expected to flow. On this basis,they are classified as : (i) class A
-          power amplifier (ii) class B power amplifier (iii) class C power
-          amplifier. (iv) Class AB power amplifier
+          1. The output final stage of a multi-stage amplifier is also called
+          power stage. {"\n"}
+          2. The first few stages in this multistage amplifier have the function
+          of only Voltage amplification. {"\n"}
+          3. The range of human hearing extends from 20 Hz to 20 kHz.{"\n"}
+          4. The transistor parameters include current gain, input impedance and
+          output impedance. {"\n"}
+          5. Amplifiers are generally classified according to their mode of
+          operation i.e. the portion of the input cycle during which the
+          collector current is expected to flow. On this basis,they are
+          classified as : (i) class A power amplifier (ii) class B power
+          amplifier (iii) class C power amplifier. (iv) Class AB power amplifier
         </ParagraphText>
       </BodyText>
     )
@@ -449,14 +470,20 @@ const SAT_TRANS_RECEPT_DATA = [
           iii. the propulsion system, which includes the rockets that propel the
           satellite.
         </ParagraphText>
+        <LessonImage imgUrl={images.satComp} />
+
         <SubHeadText>
           Types of communication services that satellites provide:
         </SubHeadText>
-        <ParagraphText>
-          i. Telecommunications, {"\n"}
-          ii. Broadcasting, and {"\n"}
-          iii. Data communication
-        </ParagraphText>
+        <ParagraphText>i. Telecommunications</ParagraphText>
+        <LessonImage imgUrl={images.telecom} />
+
+        <ParagraphText>ii. Broadcasting,</ParagraphText>
+        <LessonImage imgUrl={images.broadcasting} />
+
+        <ParagraphText>iii. Data communication</ParagraphText>
+        <LessonImage imgUrl={images.dataCom} />
+
         <SubHeadText>Types of Satellites</SubHeadText>
         <ParagraphText>
           There are basically three types of satellites according to the
@@ -498,6 +525,8 @@ const SAT_TRANS_RECEPT_DATA = [
           path, can be used in order to protect equipment in the downlink chain
           from over-voltage damage.
         </ParagraphText>
+        <LessonImage imgUrl={images.satRep2} />
+        <LessonImage imgUrl={images.satRep1} />
       </BodyText>
     )
   ),
@@ -508,17 +537,16 @@ const SAT_TRANS_RECEPT_DATA = [
       <BodyText>
         <HeadText>Summary</HeadText>
         <ParagraphText>
-          1.  There are basically three types of satellites according to the
+          1. There are basically three types of satellites according to the
           function it performs. They include: Fixed Service Satellites, Consumer
-          Satellites and Medium Powered Satellite. {'\n'}
-          2.  Low Noise Block Converter (LNB) serves as signal Amplifier. {'\n'}
-          3.  The main components of a satellite
-          consist of the followings: the propulsion system, antennas and
-          transponders and power system. {'\n'}
-          4.  The capability of a satellite to act as a repeater for many different earth stations is called multiple
-          access. {'\n'}
-          5.  The satellite is usually placed in a geosynchronous orbit
-          about 22300 miles above the earth.
+          Satellites and Medium Powered Satellite. {"\n"}
+          2. Low Noise Block Converter (LNB) serves as signal Amplifier. {"\n"}
+          3. The main components of a satellite consist of the followings: the
+          propulsion system, antennas and transponders and power system. {"\n"}
+          4. The capability of a satellite to act as a repeater for many
+          different earth stations is called multiple access. {"\n"}
+          5. The satellite is usually placed in a geosynchronous orbit about
+          22300 miles above the earth.
         </ParagraphText>
       </BodyText>
     )
@@ -547,6 +575,8 @@ const TELEVISION_DATA = [
           screen of the kinescope, or picture tube, reproducing the original
           image
         </ParagraphText>
+        <LessonImage imgUrl={images.displayTech} />
+
         <SubHeadText>Display technologies</SubHeadText>
         <ParagraphText>
           Television display technologies have been evolving over the years from
@@ -555,6 +585,7 @@ const TELEVISION_DATA = [
           display, Liquid crystal display and Organic light-emitting diode
           Television
         </ParagraphText>
+        <LessonImage imgUrl={images.displayTech2} />
       </BodyText>
     )
   ),
@@ -581,18 +612,17 @@ const TELEVISION_DATA = [
       <BodyText>
         <HeadText>Summary</HeadText>
         <ParagraphText>
-          1.  Television is used in the practical of transmitting scenes or
-          reception of video and audio UHF or VHF radio signals. {'\n'}
-          2.  Television display technologies have been evolving over the years from one
-          generation to another. Some of these display technologies include;
-          Disk, Cathode ray tube, Digital Light, Processing (DLP), Plasma
-          display, Liquid crystal display and Organic light-emitting diode
-          Television. {'\n'}
-          3.  Some of the parts of television include Tuner, Amplifier
-          and Detector. {'\n'}
-          4.  The television transmitter by means of a camera tube
-          converts light rays into electric electric signals. 
-          5.  C.R.T stands for Cathode Ray Tube.
+          1. Television is used in the practical of transmitting scenes or
+          reception of video and audio UHF or VHF radio signals. {"\n"}
+          2. Television display technologies have been evolving over the years
+          from one generation to another. Some of these display technologies
+          include; Disk, Cathode ray tube, Digital Light, Processing (DLP),
+          Plasma display, Liquid crystal display and Organic light-emitting
+          diode Television. {"\n"}
+          3. Some of the parts of television include Tuner, Amplifier and
+          Detector. {"\n"}
+          4. The television transmitter by means of a camera tube converts light
+          rays into electric signals. 5. C.R.T stands for Cathode Ray Tube.
         </ParagraphText>
       </BodyText>
     )

@@ -27,7 +27,7 @@ const RadioCom = () => {
         ))}
       </View>
 
-      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: RCMQuiz.questions }) } />
+      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: RCMQuiz.questions }) } i={1} />
     </>
   );
 };

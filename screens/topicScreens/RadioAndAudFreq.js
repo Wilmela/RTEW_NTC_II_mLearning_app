@@ -27,7 +27,7 @@ const RadioAndAudFreq = () => {
         ))}
       </View>
 
-      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: RAFQuiz.questions }) } />
+      <BottomButton title="Take a Quiz" onPress={() => navigation.navigate("Quiz", { questions: RAFQuiz.questions }) } i={2}/>
     </>
   );
 };
